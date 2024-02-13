@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eBook Reader for ADHDer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>eBook Reader for ADHDer</h1>
+    <label for="editLevel">Edit Level (1-10) </label>
+    <input type="number" id="editLevel" value="7" min="1" max="10" />
+    <br />
+    <div class="container">
+      <div class="input-area">
+        <textarea
+          id="inputText"
+          placeholder="Enter text here..."
+          rows="10"
+          cols="50"
+        ></textarea>
+      </div>
+      <div class="arrow">&#10145;</div>
+      <div class="output-area" id="outputText"></div>
+    </div>
+    <button onclick="contaminateText()">Contaminate Text</button>
+    <div id="outputText" class="contaminated"></div>
+    <h2 id="historyTitle" style="display: none">History</h2>
+    <div id="history"></div>
+    <!-- 기존 구조에 추가 -->
+    <button id="showHistoryBtn">Show History</button>
+
+    <!-- 모달 구조 -->
+    <div id="historyModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <h2>History</h2>
+        <div id="historyContent"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

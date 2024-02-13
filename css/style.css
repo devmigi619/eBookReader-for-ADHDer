@@ -1,0 +1,169 @@
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.contaminated {
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+#historyTitle {
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  background-image: url("path/to/your/background-image.jpg"); /* 배경 이미지 추가 */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.2); /* 불투명도 조절 */
+  backdrop-filter: blur(10px); /* 흐림 효과 */
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18); /* 경계선에 미묘한 효과 추가 */
+}
+
+h1,
+h2 {
+  color: #005a99;
+}
+
+textarea,
+button {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px; /* 여백 추가 */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: calc(100% - 22px);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* 요소에도 글래스모피즘 효과 적용 */
+  backdrop-filter: blur(5px);
+}
+
+input[type="number"] {
+  input[type="number"] {
+    width: 100px; /* 또는 적절한 크기 */
+    margin: 0 auto; /* 중앙 정렬을 위한 설정 */
+    display: block; /* 블록 레벨 요소로 만들어 margin auto가 작동하도록 함 */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.5); /* 글래스모피즘 스타일 적용 */
+    backdrop-filter: blur(5px); /* 흐림 효과 */
+  }
+}
+button {
+  background-color: rgba(0, 90, 153, 0.5); /* 버튼 색상 조정 */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 77, 136, 0.5);
+}
+
+.history-entry,
+#outputText {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex; /* Flexbox 적용 */
+}
+
+.text-container {
+  flex: 1; /* 텍스트 컨테이너가 가용 공간을 균등하게 차지하도록 설정 */
+  margin: 0 10px; /* 텍스트 사이의 여백 */
+}
+
+.contaminated {
+  background-color: #eef;
+  border-left: 3px solid #005a99;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.input-area,
+.output-area {
+  flex: 1;
+  margin: 0 10px;
+}
+
+textarea {
+  width: 100%; /* textarea를 부모 컨테이너의 100% 너비로 설정 */
+  height: 150px; /* 적절한 높이 설정 */
+}
+
+.arrow {
+  font-size: 24px; /* 화살표 크기 조정 */
+  align-self: center; /* 세로 방향에서 중앙 정렬 */
+}
+
+/* 수정된 텍스트 영역 스타일 */
+.output-area {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 150px; /* 입력 영역과 동일한 높이 설정 */
+  overflow-y: auto; /* 내용이 많을 경우 스크롤 */
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none; /* 기본적으로는 숨겨져 있음 */
+  position: fixed; /* 화면에 고정 */
+  z-index: 1; /* 모든 것 위에 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 전체 너비 */
+  height: 100%; /* 전체 높이 */
+  overflow: auto; /* 스크롤바 추가 */
+  background-color: rgb(0, 0, 0); /* 백그라운드 색상 */
+  background-color: rgba(0, 0, 0, 0.4); /* 약간의 투명도 */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 페이지 중앙에 위치 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 대부분의 화면을 차지 */
+}
+
+.closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
